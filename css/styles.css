@@ -12,7 +12,8 @@
   --second-bg-color: #202020;
   --text-color: #fff;
   --second-color: #ccc;
-  --main-color: #05b6ff;
+  /* --main-color: #05b6ff; */
+  --main-color: #fffb05;
   --big-font: 6rem;
   --h2-font: 3.5rem;
   --p-font: 1.1rem;
@@ -86,7 +87,7 @@ section {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-image: url(../img/test2.jpg);
+  background-image: url(../img/test2.png);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -213,7 +214,7 @@ section {
   max-width: 1150px;
 }
 .box {
-  background: #0092d169;
+  background: #d1b90069;
   padding: 35px 45px;
   border-radius: 8px;
   transition: all 0.45s ease;
@@ -399,6 +400,33 @@ section {
   border-bottom: 1px solid #ccc;
 }
 
+/* Add this CSS to your stylesheet */
+/* #testimonials {
+  padding: 20px;
+} */
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 59.313px;
+  margin-top: 80px;
+  margin-bottom: 0px;
+}
+
+.video-container video {
+  flex: 1 0 30%; /* The 30% is the minimum width for each video */
+  max-width: 30%; /* The 30% is the maximum width for each video */
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .video-container video {
+    flex: 1 0 48%; /* Increase the minimum width for each video on smaller screens */
+    max-width: 48%; /* Increase the maximum width for each video on smaller screens */
+  }
+}
+
 @media (max-width: 1480px) {
   header {
     padding: 12px 2.5%;
@@ -508,7 +536,7 @@ section {
     position: relative;
     height: 120vh;
     width: 100%;
-    background-image: url(../img/test2.jpg);
+    background-image: url(../img/test2.PNG);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -639,7 +667,7 @@ section {
     position: relative;
     height: 120vh;
     width: 100%;
-    background-image: url(../img/test2.jpg);
+    background-image: url(../img/test2.png);
     background-size: cover;
     background-position: center;
     display: flex;
