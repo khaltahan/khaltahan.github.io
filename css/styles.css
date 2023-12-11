@@ -44,6 +44,7 @@ header {
   font-weight: 700;
   letter-spacing: 1px;
   font-family: "Slackside One", cursive;
+  width: 150px;
 }
 span {
   color: var(--main-color);
