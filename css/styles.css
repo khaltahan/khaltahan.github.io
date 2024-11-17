@@ -13,7 +13,7 @@
   --text-color: #fff;
   --second-color: #ccc;
   /* --main-color: #05b6ff; */
-  --box-color: #fcc522e2;
+  --box-color: #b2215da7;
   /* --main-color: #fffb05; */
   --main-color: #fbd870;
   --big-font: 6rem;
@@ -38,13 +38,18 @@ header {
   border-bottom: 1px solid transparent;
   transition: all 0.45s ease;
 }
-.logo {
-  color: var(--second-color);
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  font-family: "Slackside One", cursive;
-  width: 150px;
+.logo img {
+  max-width: 250px; /* Adjust as necessary */
+  height: auto;
+  display: block;
+}
+
+/* Add padding or margin adjustments if needed */
+header .logo {
+  padding: 0;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
 }
 span {
   color: var(--main-color);
@@ -53,7 +58,7 @@ span {
   display: flex;
 }
 .navlist a {
-  color: var(--second-color);
+  color: var(--text-color);
   font-size: 17px;
   font-weight: 700;
   margin: 0 25px;
@@ -67,7 +72,7 @@ span {
 }
 #menu-icon {
   font-size: 35px;
-  color: #ccc;
+  color: var(--text-color);
   z-index: 10001;
   cursor: pointer;
   margin-left: 25px;
@@ -91,20 +96,29 @@ section {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/test3.jpg);
+  background-image: linear-gradient(rgb(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url(../img/test5.png);
   background-size: cover;
   background-position: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  padding: 130px;
+  align-items: center; /* Center content vertically */
+  flex-direction: column; /* Stack items (quote and title) vertically */
 }
 .home-div {
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   max-width: 2000px;
+}
+.home-title {
+  text-align: center;
+  z-index: 1; /* Ensure it appears above the background */
+}
+
+.home-title img {
+  max-width: 90%; /* Allows the image to shrink dynamically */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 400px; /* Limit the maximum height */
 }
 .slide {
   margin-bottom: 20px;
@@ -579,17 +593,17 @@ section {
     width: 100%;
     border-radius: 8px;
   }
-  .home {
+  /* .home {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/test3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/test5.png);
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-  }
+  } */
 
   .home-text {
     padding: 20px 20px;
@@ -734,18 +748,18 @@ section {
     border-bottom: 1px solid #ccc;
     font-size: 1.2rem;
   }
-  .home {
+  /* .home {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/test3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/test5.png);
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 20px 0px;
-  }
+  } */
 
   .home-text {
     padding: 20px 20px;
