@@ -13,9 +13,9 @@
   --text-color: #fff;
   --second-color: #ccc;
   /* --main-color: #05b6ff; */
-  --box-color: #b2215da7;
+  --box-color: #6699ff;
   /* --main-color: #fffb05; */
-  --main-color: #fbd870;
+  --main-color: #3366cc;
   --big-font: 6rem;
   --h2-font: 3.5rem;
   --p-font: 1.1rem;
@@ -65,7 +65,8 @@ span {
   transition: all 0.45s ease;
 }
 .navlist a:hover {
-  color: var(--main-color);
+  color: var(--main-color); /* keeps it white */
+  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
 }
 .navlist a.active {
   color: var(--main-color);
@@ -469,6 +470,61 @@ section {
   margin-bottom: 20px;
 }
 
+.contact-icons-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px 20px;
+  background: var(--second-bg-color);
+  text-align: center;
+  border-top: 1px solid #ffffff1a;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+}
+
+.contact-item a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  color: #fff; /* White text */
+}
+
+.contact-item i {
+  font-size: 26px; /* Slightly larger icons */
+  color: #fff; /* White icons */
+}
+
+.contact-item span {
+  color: #fff; /* White icons */
+}
+
+/* Hover effect: icon changes to functional color */
+.contact-item a.phone:hover i {
+  color: #28a745;
+}
+
+.contact-item a.email:hover i {
+  color: #dc3545;
+}
+
+.contact-item a.instagram:hover i {
+  color: #c13584;
+}
+
+.contact-item a.facebook:hover i {
+  color: #1877f2;
+}
+
 @media (max-width: 1480px) {
   header {
     padding: 12px 2.5%;
@@ -680,7 +736,8 @@ section {
     color: var(--text-color);
   }
   .navlist a:hover {
-    color: var(--main-color);
+    color: var(--main-color); /* keeps it white */
+    text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
   }
   .navlist a.active {
     color: var(--text-color);
@@ -817,6 +874,27 @@ section {
     margin-right: 60vw;
     width: 150px;
     transform: rotate(-0.05turn);
+  }
+
+  @media (max-width: 600px) {
+    .contact-icons-footer {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .contact-item {
+      justify-content: center;
+    }
+
+    .contact-item a {
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .contact-item span {
+      word-break: break-word;
+    }
   }
 }
 
